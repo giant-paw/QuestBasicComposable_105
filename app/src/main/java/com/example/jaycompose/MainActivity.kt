@@ -89,6 +89,7 @@ fun BasicCompound(modifier: Modifier = Modifier) {
             id = R.drawable.krs),
             contentDescription = "",
             modifier = Modifier.size(500.dp)
+                .padding(top = 10.dp)
             )
 
     }
