@@ -21,9 +21,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             JayComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                    BasicCompound(
+
                     )
                 }
             }
@@ -52,6 +51,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     JayComposeTheme {
-        Greeting("Android")
+        BasicCompound()
     }
 }
