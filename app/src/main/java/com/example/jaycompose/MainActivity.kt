@@ -62,7 +62,9 @@ fun BasicCompound(modifier: Modifier = Modifier) {
         )
 
         Text(
-            text ="Nama"
+            text ="Nama",
+            fontSize = 30.sp,
+            modifier = Modifier.padding(top = 10.dp)
         )
 
         Text(
