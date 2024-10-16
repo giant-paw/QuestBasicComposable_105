@@ -15,6 +15,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.modifier.modifierLocalMapOf
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
@@ -63,12 +64,17 @@ fun BasicCompound(modifier: Modifier = Modifier) {
 
         Text(
             text ="Nama",
-            fontSize = 30.sp,
+            fontSize = 20.sp,
             modifier = Modifier.padding(top = 10.dp)
         )
 
         Text(
-            text = "Giant Prakoso Amukti Wibowo"
+            text = "Giant Prakoso Amukti Wibowo",
+            fontSize = 22.sp,
+            color = Color.Red,
+            fontWeight = FontWeight.ExtraBold,
+            modifier = Modifier.padding(top = 5.dp)
+
         )
 
         Text(
