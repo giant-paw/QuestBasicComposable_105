@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -18,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.modifier.modifierLocalMapOf
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
@@ -48,54 +50,67 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BasicCompound(modifier: Modifier = Modifier) {
-    Column (
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Top,
-        modifier = Modifier.fillMaxSize()
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
     ) {
-        Text(
-            text = "LOGIN",
-            fontSize = 80.sp,
-            fontWeight = FontWeight.Bold,
-            fontStyle = FontStyle.Italic,
-            modifier = Modifier.padding(top = 30.dp)
+
+        Image(
+            painter = painterResource(id = R.drawable.bg),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier.fillMaxSize()
         )
 
-        Image(painter = painterResource(
-            id = R.drawable.logo),
-            contentDescription = "",
-        )
-
-        Text(
-            text ="Nama",
-            fontSize = 20.sp,
-            modifier = Modifier.padding(top = 10.dp)
-        )
-
-        Text(
-            text = "Giant Prakoso Amukti Wibowo",
-            fontSize = 22.sp,
-            color = Color.Red,
-            fontWeight = FontWeight.ExtraBold,
-            modifier = Modifier.padding(top = 5.dp)
-        )
-
-        Text(
-            text = "20220140105",
-            fontSize = 20.sp,
-            fontFamily = FontFamily.SansSerif,
-            modifier = Modifier.padding(top = 10.dp)
-        )
-
-        Image(painter = painterResource(
-            id = R.drawable.krs),
-            contentDescription = "",
-            modifier = Modifier
-                .size(500.dp)
-                .padding(top = 10.dp)
-                .clip(CircleShape)
+        Column (
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Top,
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Text(
+                text = "LOGIN",
+                fontSize = 80.sp,
+                fontWeight = FontWeight.Bold,
+                fontStyle = FontStyle.Italic,
+                modifier = Modifier.padding(top = 30.dp)
             )
 
+            Image(painter = painterResource(
+                id = R.drawable.logo),
+                contentDescription = "",
+            )
+
+            Text(
+                text ="Nama",
+                fontSize = 20.sp,
+                modifier = Modifier.padding(top = 10.dp)
+            )
+
+            Text(
+                text = "Giant Prakoso Amukti Wibowo",
+                fontSize = 22.sp,
+                color = Color.Red,
+                fontWeight = FontWeight.ExtraBold,
+                modifier = Modifier.padding(top = 5.dp)
+            )
+
+            Text(
+                text = "20220140105",
+                fontSize = 20.sp,
+                fontFamily = FontFamily.SansSerif,
+                modifier = Modifier.padding(top = 10.dp)
+            )
+
+            Image(painter = painterResource(
+                id = R.drawable.krs),
+                contentDescription = "",
+                modifier = Modifier
+                    .size(500.dp)
+                    .padding(top = 10.dp)
+                    .clip(CircleShape)
+            )
+
+        }
     }
 }
 
