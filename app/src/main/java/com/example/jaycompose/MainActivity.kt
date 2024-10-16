@@ -61,6 +61,18 @@ fun BasicCompound(modifier: Modifier = Modifier) {
             contentDescription = "",
         )
 
+        Text(
+            text ="Nama"
+        )
+
+        Text(
+            text = "Giant Prakoso Amukti Wibowo"
+        )
+
+        Text(
+            text = "20220140105"
+        )
+
     }
 }
 
