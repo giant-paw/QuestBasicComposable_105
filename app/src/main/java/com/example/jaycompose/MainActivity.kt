@@ -82,7 +82,8 @@ fun BasicCompound(modifier: Modifier = Modifier) {
 
             Text(
                 text ="Nama",
-                fontSize = 20.sp,
+                fontSize = 25.sp,
+                fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(top = 10.dp)
             )
 
@@ -96,8 +97,9 @@ fun BasicCompound(modifier: Modifier = Modifier) {
 
             Text(
                 text = "20220140105",
-                fontSize = 20.sp,
+                fontSize = 30.sp,
                 fontFamily = FontFamily.SansSerif,
+                fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(top = 10.dp)
             )
 
