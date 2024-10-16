@@ -59,7 +59,8 @@ fun BasicCompound(modifier: Modifier = Modifier) {
             modifier = Modifier.padding(top = 30.dp)
         )
 
-        Image(painter = painterResource(id = R.drawable.logo),
+        Image(painter = painterResource(
+            id = R.drawable.logo),
             contentDescription = "",
         )
 
@@ -83,6 +84,12 @@ fun BasicCompound(modifier: Modifier = Modifier) {
             fontFamily = FontFamily.SansSerif,
             modifier = Modifier.padding(top = 10.dp)
         )
+
+        Image(painter = painterResource(
+            id = R.drawable.krs),
+            contentDescription = "",
+
+            )
 
     }
 }
