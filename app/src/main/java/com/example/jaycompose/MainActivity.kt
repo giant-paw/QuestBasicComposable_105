@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.modifier.modifierLocalMapOf
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -74,11 +75,13 @@ fun BasicCompound(modifier: Modifier = Modifier) {
             color = Color.Red,
             fontWeight = FontWeight.ExtraBold,
             modifier = Modifier.padding(top = 5.dp)
-
         )
 
         Text(
-            text = "20220140105"
+            text = "20220140105",
+            fontSize = 20.sp,
+            fontFamily = FontFamily.SansSerif,
+            modifier = Modifier.padding(top = 10.dp)
         )
 
     }
