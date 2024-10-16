@@ -88,7 +88,7 @@ fun BasicCompound(modifier: Modifier = Modifier) {
         Image(painter = painterResource(
             id = R.drawable.krs),
             contentDescription = "",
-
+            modifier = Modifier.size(500.dp)
             )
 
     }
