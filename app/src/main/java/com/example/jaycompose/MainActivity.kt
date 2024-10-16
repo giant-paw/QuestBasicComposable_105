@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
             JayComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     BasicCompound(
-
+                        modifier = Modifier.padding(innerPadding)
                     )
                 }
             }
@@ -31,20 +31,12 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun BasicCompound() {
+fun BasicCompound(modifier: Modifier = Modifier) {
     Column {
         Text(
             text = "LOGIN"
         )
     }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
 }
 
 @Preview(showBackground = true)
